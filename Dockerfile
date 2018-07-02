@@ -1,5 +1,5 @@
 FROM debian:9
-RUN apt-get update
+RUN apt-get update &&\
  apt-get upgrade -y &&\
  apt-get install -y openjdk-8-jre graphviz gpg &&\
  echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee /etc/apt/sources.list.d/webupd8team-java.list &&\
